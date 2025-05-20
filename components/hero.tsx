@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Download, Github, Linkedin, Mail } from "lucide-react"
+import { Baloo_Bhaina_2 } from "next/font/google"
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("")
@@ -91,6 +92,7 @@ export default function Hero() {
         >
           <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full blur opacity-30 animate-pulse"></div>
           <div className="relative bg-white dark:bg-zinc-900 rounded-full overflow-hidden border-4 border-zinc-100 dark:border-zinc-800">
+            
             <img src="/placeholder.svg?height=500&width=500" alt="Daniel Prem" className="w-full h-auto" />
           </div>
         </motion.div>
