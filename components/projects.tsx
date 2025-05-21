@@ -15,8 +15,7 @@ const projects = [
     icon: <Microscope className="h-10 w-10 text-emerald-600" />,
     technologies: ["PyTorch", "HuBert", "ASR", "Whisper", "CNN"],
     links: [
-      { label: "View Project", url: "#" },
-      { label: "GitHub", url: "#" },
+      { label: "GitHub", url: "https://github.com/URK21CS1072/Final-Year-Project-URK21CS1072" },
     ],
   },
   {
@@ -27,8 +26,7 @@ const projects = [
     icon: <BookOpen className="h-10 w-10 text-emerald-600" />,
     technologies: ["Rasa NLU", "DIET Classifier", "NLU", "Entity Extraction", "HTML", "CSS", "JavaScript"],
     links: [
-      { label: "View Project", url: "#" },
-      { label: "GitHub", url: "#" },
+      { label: "GitHub", url: "https://github.com/URK21CS1072/Library-Book-Recommendation-Chatbot-Using-Rasa-NLU" },
     ],
   },
   {
@@ -48,8 +46,7 @@ const projects = [
       "Firebase",
     ],
     links: [
-      { label: "View Project", url: "#" },
-      { label: "GitHub", url: "#" },
+      { label: "GitHub", url: "https://github.com/URK21CS1072/Tech-Savants-Website" },
     ],
   },
 ]
@@ -105,19 +102,26 @@ export default function Projects() {
                 </CardContent>
                 <CardFooter className="flex gap-3">
                   {project.links.map((link, i) => (
-                    <Button
+                    <a
                       key={i}
-                      variant={i === 0 ? "default" : "outline"}
-                      size="sm"
-                      className={i === 0 ? "bg-emerald-600 hover:bg-emerald-700" : ""}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none" }}
                     >
-                      {link.label === "GitHub" ? (
-                        <Github className="mr-2 h-4 w-4" />
-                      ) : (
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                      )}
-                      {link.label}
-                    </Button>
+                      <Button
+                        variant={i === 0 ? "default" : "outline"}
+                        size="sm"
+                        className={i === 0 ? "bg-emerald-600 hover:bg-emerald-700" : ""}
+                      >
+                        {link.label === "GitHub" ? (
+                          <Github className="mr-2 h-4 w-4" />
+                        ) : (
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                        )}
+                        {link.label}
+                      </Button>
+                    </a>
                   ))}
                 </CardFooter>
               </Card>

@@ -150,7 +150,40 @@ export default function Education() {
         >
           <Card className="border-zinc-200 dark:border-zinc-800">
             <CardHeader>
-              <CardTitle className="text-xl text-zinc-900 dark:text-white">Extra-Curricular Activities</CardTitle>
+                <CardTitle className="text-2xl text-zinc-900 dark:text-white mb-4">Conference Presentations</CardTitle>
+                <CardDescription>
+                  <div className="bg-emerald-50 dark:bg-zinc-900 rounded-lg p-5 mb-8 shadow-sm border border-emerald-100 dark:border-zinc-800">
+                    <ul className="space-y-6">
+                      <li className="flex items-start gap-3">
+                        <div className="mt-1">
+                          <span className="inline-block h-3 w-3 rounded-full bg-emerald-500"></span>
+                        </div>
+                        <div>
+                          <span className="block font-semibold text-zinc-900 dark:text-white mb-1">
+                            LIBRARY BOOK RECOMMENDATION CHATBOT USING RASA NLU
+                          </span>
+                          <span className="block text-zinc-700 dark:text-zinc-300">
+                            Presented at the <span className="font-medium">Third IEEE International Conference on "Smart Technologies and Systems for Next Generation Computing (ICSTSN 2024)"</span>, IFET College of Engineering, 18th-19th July 2024.
+                          </span>
+                        </div>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="mt-1">
+                          <span className="inline-block h-3 w-3 rounded-full bg-emerald-500"></span>
+                        </div>
+                        <div>
+                          <span className="block font-semibold text-zinc-900 dark:text-white mb-1">
+                            A Comparative Study of Lightweight CNNs for Dysarthria Classification
+                          </span>
+                          <span className="block text-zinc-700 dark:text-zinc-300">
+                            Presented at the <span className="font-medium">5th International Conference on Pervasive Computing and Social Networking (ICPCSN-2025)</span>, R P Sarathy Institute of Technology, Salem, Tamil Nadu, India, 14th-16th May 2025.
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </CardDescription>
+                <CardTitle className="text-2xl text-zinc-900 dark:text-white mb-4 mt-8">Extra-Curricular Activities</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-6">

@@ -10,20 +10,20 @@ export default function Footer() {
               Daniel<span className="text-emerald-600">Prem</span>
             </a>
             <p className="text-zinc-600 dark:text-zinc-400 mt-2">
-              Machine Learning Engineer | Data Scientist | Full Stack Developer
+              Aspiring Machine Learning Engineer | Data Science Enthusiast | Full Stack Developer
             </p>
           </div>
 
           <div className="flex items-center space-x-6">
             <a
-              href="#"
+              href="https://github.com/URK21CS1072"
               className="text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-500 transition-colors"
               aria-label="GitHub"
             >
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/daniel-prem/"
               className="text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-500 transition-colors"
               aria-label="LinkedIn"
             >

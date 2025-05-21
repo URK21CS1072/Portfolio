@@ -4,11 +4,10 @@ import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Download, Github, Linkedin, Mail } from "lucide-react"
-import { Baloo_Bhaina_2 } from "next/font/google"
 
 export default function Hero() {
   const [typedText, setTypedText] = useState("")
-  const fullText = "Machine Learning Engineer | Data Scientist | Full Stack Developer"
+  const fullText = "Aspiring Machine Learning Engineer | Data Science Enthusiast | Full Stack Developer"
 
   useEffect(() => {
     let currentIndex = 0
@@ -61,14 +60,14 @@ export default function Hero() {
 
           <div className="flex items-center space-x-4 mt-8">
             <a
-              href="#"
+              href="https://github.com/URK21CS1072"
               className="text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-500 transition-colors"
               aria-label="GitHub"
             >
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/daniel-prem/"
               className="text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-500 transition-colors"
               aria-label="LinkedIn"
             >
@@ -90,11 +89,21 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="relative hidden lg:block"
         >
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full blur opacity-30 animate-pulse"></div>
-          <div className="relative bg-white dark:bg-zinc-900 rounded-full overflow-hidden border-4 border-zinc-100 dark:border-zinc-800">
-            
-            <img src="/placeholder.svg?height=500&width=500" alt="Daniel Prem" className="w-full h-auto" />
-          </div>
+            <div className="relative" style={{ width: 500, height: 500 }}>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full blur opacity-30 animate-pulse z-0"></div>
+              <div
+                className="relative bg-white dark:bg-zinc-900 rounded-full overflow-hidden border-4 border-zinc-100 dark:border-zinc-800 z-10"
+                style={{ width: 500, height: 500 }}
+              >
+                <img
+                  src="/profilepic.jpg"
+                  alt="Daniel Prem"
+                  className="w-full h-full object-cover"
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </div>
         </motion.div>
       </div>
     </section>
