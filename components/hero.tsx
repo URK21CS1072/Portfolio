@@ -44,18 +44,16 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Button className="bg-emerald-600 hover:bg-emerald-700">
-              <Mail className="mr-2 h-4 w-4" />
-              Contact Me
-            </Button>
+            
 
-            <Button
-              variant="outline"
-              className="border-emerald-600 text-emerald-600 hover:bg-emerald-50 dark:hover:bg-emerald-950"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Download CV
-            </Button>
+          <a
+            href="/Daniel_Prem_Resume(1).pdf"
+            download
+            className="inline-flex items-center px-4 py-2 border border-emerald-600 text-emerald-600 rounded-md hover:bg-emerald-50 dark:hover:bg-emerald-950 transition-colors"
+          >
+            <Download className="mr-2 h-4 w-4" />
+            Download CV
+          </a>
           </div>
 
           <div className="flex items-center space-x-4 mt-8">
