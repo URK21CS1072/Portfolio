@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { GraduationCap, Award, Calendar } from "lucide-react"
+import { GraduationCap, Award, Calendar, Users, Code2, FileText } from "lucide-react"
 
 export default function Education() {
   return (
@@ -141,88 +141,144 @@ export default function Education() {
             </Card>
           </motion.div>
         </div>
+{/* Research Conferences Presented Section */}
+        <div className="space-y-6">
+          <h3 className="text-xl font-semibold text-zinc-900 dark:text-white mb-4">Research Conferences Presented</h3>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <Card className="border-zinc-200 dark:border-zinc-800">
-            <CardHeader>
-                <CardTitle className="text-2xl text-zinc-900 dark:text-white mb-4">Conference Presentations</CardTitle>
-                <CardDescription>
-                  <div className="bg-emerald-50 dark:bg-zinc-900 rounded-lg p-5 mb-8 shadow-sm border border-emerald-100 dark:border-zinc-800">
-                    <ul className="space-y-6">
-                      <li className="flex items-start gap-3">
-                        <div className="mt-1">
-                          <span className="inline-block h-3 w-3 rounded-full bg-emerald-500"></span>
-                        </div>
-                        <div>
-                          <span className="block font-semibold text-zinc-900 dark:text-white mb-1">
-                            LIBRARY BOOK RECOMMENDATION CHATBOT USING RASA NLU
-                          </span>
-                          <span className="block text-zinc-700 dark:text-zinc-300">
-                            Presented at the <span className="font-medium">Third IEEE International Conference on "Smart Technologies and Systems for Next Generation Computing (ICSTSN 2024)"</span>, IFET College of Engineering, 18th-19th July 2024.
-                          </span>
-                        </div>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <div className="mt-1">
-                          <span className="inline-block h-3 w-3 rounded-full bg-emerald-500"></span>
-                        </div>
-                        <div>
-                          <span className="block font-semibold text-zinc-900 dark:text-white mb-1">
-                            A Comparative Study of Lightweight CNNs for Dysarthria Classification
-                          </span>
-                          <span className="block text-zinc-700 dark:text-zinc-300">
-                            Presented at the <span className="font-medium">5th International Conference on Pervasive Computing and Social Networking (ICPCSN-2025)</span>, R P Sarathy Institute of Technology, Salem, Tamil Nadu, India, 14th-16th May 2025.
-                          </span>
-                        </div>
-                      </li>
-                    </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card className="border-zinc-200 dark:border-zinc-800 h-full hover:shadow-md transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex flex-col items-center text-center mb-4">
+                    <div className="p-3 bg-emerald-100 dark:bg-emerald-900 rounded-full mb-4">
+                      <FileText className="h-8 w-8 text-emerald-600" />
+                    </div>
+                    <h4 className="font-medium text-zinc-900 dark:text-white">
+                      LIBRARY BOOK RECOMMENDATION CHATBOT USING RASA NLU
+                    </h4>
+                    <p className="text-sm text-emerald-600 font-medium mt-1">
+                      Third IEEE International Conference on "Smart Technologies and Systems for Next Generation Computing (ICSTSN 2024)"
+                    </p>
                   </div>
-                </CardDescription>
-                <CardTitle className="text-2xl text-zinc-900 dark:text-white mb-4 mt-8">Extra-Curricular Activities</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-6">
-                <div className="space-y-2">
-                  <h4 className="font-medium text-zinc-900 dark:text-white">
-                    Intel Unnati Grand Challenge Winner (2023)
-                  </h4>
-                  <p className="text-zinc-700 dark:text-zinc-300">
+                  <p className="text-zinc-700 dark:text-zinc-300 text-sm">
+                    Presented at IFET College of Engineering on 18th and 19th July 2024.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Card className="border-zinc-200 dark:border-zinc-800 h-full hover:shadow-md transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex flex-col items-center text-center mb-4">
+                    <div className="p-3 bg-emerald-100 dark:bg-emerald-900 rounded-full mb-4">
+                      <FileText className="h-8 w-8 text-emerald-600" />
+                    </div>
+                    <h4 className="font-medium text-zinc-900 dark:text-white">
+                      A COMPARATIVE STUDY OF LIGHTWEIGHT CNNS FOR DYSARTHRIA CLASSIFICATION
+                    </h4>
+                    <p className="text-sm text-emerald-600 font-medium mt-1">
+                      5th International Conference on Pervasive Computing and Social Networking (ICPCSN-2025)
+                    </p>
+                  </div>
+                  <p className="text-zinc-700 dark:text-zinc-300 text-sm">
+                    Presented at R P Sarathy Institute of Technology, Salem, Tamil Nadu, India, from 14th-16th May 2025.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+        <div className="space-y-6">
+          <h3 className="text-xl font-semibold text-zinc-900 dark:text-white mb-4">Extra-Curricular Activities</h3>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card className="border-zinc-200 dark:border-zinc-800 h-full hover:shadow-md transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex flex-col items-center text-center mb-4">
+                    <div className="p-3 bg-emerald-100 dark:bg-emerald-900 rounded-full mb-4">
+                      <Award className="h-8 w-8 text-emerald-600" />
+                    </div>
+                    <h4 className="font-medium text-zinc-900 dark:text-white">Intel Unnati Grand Challenge Winner</h4>
+                    <p className="text-sm text-emerald-600 font-medium mt-1">2023</p>
+                  </div>
+                  <p className="text-zinc-700 dark:text-zinc-300 text-sm">
                     Secured victory among over 170 competing teams in the Intel® Unnati Grand Challenge Summer 2023,
                     organized with IIIT Hyderabad, for the project "Real-Time Road Monitoring for Autonomous Vehicle
-                    Transition in India using Deep Learning".
+                    Transition in India".
                   </p>
-                </div>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-                <div className="space-y-2">
-                  <h4 className="font-medium text-zinc-900 dark:text-white">
-                    Coordinator, Annual Cultural Event "Megaplay" (2022-2024)
-                  </h4>
-                  <p className="text-zinc-700 dark:text-zinc-300">
-                    Served as the Stage Coordinator for Megaplay, managing schedules, coordinating stage activities, and
-                    addressing logistical issues, showcasing leadership skills and effective team coordination. Led a
-                    team of 50 volunteers to successfully manage an event that drew over 200 participants and 500+
-                    audience members, making a significant cultural impact within the university community.
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              <Card className="border-zinc-200 dark:border-zinc-800 h-full hover:shadow-md transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex flex-col items-center text-center mb-4">
+                    <div className="p-3 bg-emerald-100 dark:bg-emerald-900 rounded-full mb-4">
+                      <Users className="h-8 w-8 text-emerald-600" />
+                    </div>
+                    <h4 className="font-medium text-zinc-900 dark:text-white">
+                      Coordinator, Annual Cultural Event "Megaplay"
+                    </h4>
+                    <p className="text-sm text-emerald-600 font-medium mt-1">2022-2024</p>
+                  </div>
+                  <p className="text-zinc-700 dark:text-zinc-300 text-sm">
+                    Led a team of 50 volunteers to successfully manage an event with 200+ participants and 500+ audience
+                    members. Managed schedules, coordinated activities, and addressed logistical issues, showcasing
+                    leadership skills.
                   </p>
-                </div>
+                </CardContent>
+              </Card>
+            </motion.div>
 
-                <div className="space-y-2">
-                  <h4 className="font-medium text-zinc-900 dark:text-white">
-                    Member, Google Developer Student Clubs (GDSC) (2023)
-                  </h4>
-                  <p className="text-zinc-700 dark:text-zinc-300">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <Card className="border-zinc-200 dark:border-zinc-800 h-full hover:shadow-md transition-shadow">
+                <CardContent className="pt-6">
+                  <div className="flex flex-col items-center text-center mb-4">
+                    <div className="p-3 bg-emerald-100 dark:bg-emerald-900 rounded-full mb-4">
+                      <Code2 className="h-8 w-8 text-emerald-600" />
+                    </div>
+                    <h4 className="font-medium text-zinc-900 dark:text-white">
+                      Member, Google Developer Student Clubs
+                    </h4>
+                    <p className="text-sm text-emerald-600 font-medium mt-1">2023</p>
+                  </div>
+                  <p className="text-zinc-700 dark:text-zinc-300 text-sm">
                     Participated in various tech events, including Google Cloud Study Jams 2023 and earned multiple
                     completion and skill badges, fostering a collaborative knowledge-sharing environment.
                   </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
       </motion.div>
     </section>
   )
